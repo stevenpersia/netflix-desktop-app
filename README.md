@@ -2,7 +2,7 @@
 	<img
 		width="64"
 		alt="Netflix"
-		src="">
+		src="https://raw.githubusercontent.com/stevenpersia/netflix-desktop-app/master/src/main/assets/icon-netflix.png">
 </h1>
 <h3 align="center">
 	Netflix desktop app
@@ -17,10 +17,10 @@
 </p>
 
 <p align="center">
-	<img src="">
+	<img src="https://raw.githubusercontent.com/stevenpersia/netflix-desktop-app/master/src/main/assets/preview-netflix.png">
 </p>
 <p align="center">
-	<img src="">
+	<img src="https://raw.githubusercontent.com/stevenpersia/netflix-desktop-app/master/src/main/assets/dock-netflix.png">
 </p>
 
 ## Overview
