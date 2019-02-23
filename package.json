@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"electron-widevinecdm": "^7.0.0",
-		"source-map-support": "^0.5.5"
+		"source-map-support": "^0.5.10"
 	},
 	"devDependencies": {
 		"electron": "^2.0.8",
