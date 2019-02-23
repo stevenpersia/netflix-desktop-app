@@ -11,6 +11,8 @@ function createMainWindow() {
 		minWidth: 1200,
 		minHeight: 800,
 		webPreferences: {
+			plugins: true,
+			sandbox: true,
 			nodeIntegration: false
 		}
 	});
