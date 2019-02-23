@@ -25,7 +25,7 @@
 
 ## Overview
 
-Tired of having to log on to the Netflix site to see your favorite shows? Install the Netflix desktop app and enjoy!
+Tired of having to connect to Netflix site to see your favorite shows when you are on your computer ? Install the Netflix desktop app and enjoy !
 
 Of course, all rights are reserved for Netflix.
 
