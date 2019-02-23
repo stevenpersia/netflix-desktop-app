@@ -20,7 +20,7 @@
 	"devDependencies": {
 		"electron": "^2.0.8",
 		"electron-builder": "^20.38.5",
-		"electron-webpack": "^2.0.1",
+		"electron-webpack": "^2.6.2",
 		"webpack": "^4.8.1"
 	},
 	"resolutions": {
