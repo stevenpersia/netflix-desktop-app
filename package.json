@@ -1,0 +1,45 @@
+{
+	"name": "Netflix",
+	"description": "Netflix desktop app (ElectronJS)",
+	"author": "Steven Persia",
+	"version": "1.0.0",
+	"license": "MIT",
+	"scripts": {
+		"dev": "electron-webpack dev",
+		"compile": "electron-webpack",
+		"dist": "yarn compile && electron-builder --publish onTagOrDraft",
+		"dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
+		"dist:linux": "yarn compile && electron-builder -l --publish onTagOrDraft",
+		"dist:mac": "yarn compile && electron-builder -m --publish onTagOrDraft",
+		"dist:windows": "yarn compile && electron-builder -w --publish onTagOrDraft"
+	},
+	"dependencies": {
+		"electron-widevinecdm": "^7.0.0",
+		"source-map-support": "^0.5.5"
+	},
+	"devDependencies": {
+		"electron": "^2.0.4",
+		"electron-builder": "^20.11.1",
+		"electron-webpack": "^2.0.1",
+		"webpack": "^4.8.1"
+	},
+	"resolutions": {
+		"webpack-sources": "1.0.1"
+	},
+	"build": {
+		"appId": "com.electron.netflix",
+		"mac": {
+			"category": "public.app-category.entertainment"
+		},
+		"win": {
+			"target": "msi"
+		},
+		"linux": {
+			"category": "Video",
+			"target": [
+				"AppImage",
+				"snap"
+			]
+		}
+	}
+}

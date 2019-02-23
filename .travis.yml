@@ -1,0 +1,50 @@
+sudo: true
+
+branches:
+  only:
+    - master
+
+osx_image: xcode8.3
+
+language: node_js
+
+matrix:
+  include:
+    - os: osx
+    - os: linux
+
+node_js:
+  - 8
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+    - app/node_modules
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - icnsutils
+      - graphicsmagick
+      - xz-utils
+      - xorriso
+      - xvfb
+      - libgnome-keyring-dev
+
+install:
+  - yarn
+  - cd app && yarn && cd ..
+  - export DISPLAY=':99.0'
+  - "Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &"
+
+before_script:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start &
+  - sleep 3
+
+script:
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then yarn dist:linux; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then yarn dist:mac; fi
