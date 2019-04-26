@@ -9,8 +9,6 @@
 </h3>
 
 <p align="center">
-	<a href="https://discord.gg/qSEq7XE"><img alt="Discord" src="https://img.shields.io/discord/536625602967502889.svg?colorB=7289DA&label=discord&style=flat-square"></a>
-	<br>
 	<img alt="Last Commit" src="https://img.shields.io/github/last-commit/stevenpersia/netflix-desktop-app.svg?style=flat-square">
 	<img alt="Licence" src="https://img.shields.io/github/license/stevenpersia/netflix-desktop-app.svg?style=flat-square">
 	<img alt="Star" src="https://img.shields.io/badge/you%20like%20%3F-STAR%20ME-blue.svg?style=flat-square">
@@ -51,7 +49,7 @@ When installation is complete, run one of these commands :
 ```bash
 yarn dev # development
 # or
-yarn dist # create dist
+yarn dist # create dist, you'll find app in this folder
 ```
 
 ## Star, Fork, Clone & Contribute
